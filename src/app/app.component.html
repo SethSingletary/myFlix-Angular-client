@@ -2,8 +2,9 @@
   <h1>
     Welcome to myFlix!
   </h1>
+  <!--The mat-raised-button capitization affects styling. Change the m to cap to see-->
   <button
-    Mat-raised-button
+    mat-raised-button
     (click)="openUserRegistrationDialog()"
     style="margin-right: 10px;"
     color="primary"
@@ -12,6 +13,8 @@
   </button>
   <button
     mat-raised-button
+    (click)="openUserLoginDialog()"
+    style="margin-right: 10px;"
     color="primary"
   >
     Login
