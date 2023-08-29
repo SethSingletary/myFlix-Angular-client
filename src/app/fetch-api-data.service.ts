@@ -29,6 +29,7 @@ export class FetchApiDataService {
     );
   }
 
+  
   //returns a list of all movies
   getAllMovies(): Observable<any> {
     const token = localStorage.getItem('token');
