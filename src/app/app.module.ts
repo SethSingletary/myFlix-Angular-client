@@ -21,10 +21,15 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MovieDialogComponentComponent } from './movie-dialog-component/movie-dialog-component.component';
+import { MovieDetailDialogComponentComponent } from './movie-detail-dialog-component/movie-detail-dialog-component.component';
+import { MovieDetailDialogComponent } from './movie-detail-dialog/movie-detail-dialog.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
+  { path: 'profile', component: ProfileViewComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix'},
 ];
 
@@ -35,7 +40,11 @@ const appRoutes: Routes = [
     UserLoginFormComponent,
     MovieCardComponent,
     WelcomePageComponent,
-    ProfileViewComponent
+    ProfileViewComponent,
+    NavbarComponent,
+    MovieDialogComponentComponent,
+    MovieDetailDialogComponentComponent,
+    MovieDetailDialogComponent
   ],
   imports: [
     BrowserModule,

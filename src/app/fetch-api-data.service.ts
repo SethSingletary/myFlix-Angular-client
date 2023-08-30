@@ -138,7 +138,7 @@ export class FetchApiDataService {
     user.FavoriteMovies.push(movieId);
     localStorage.setItem('user', JSON.stringify(user));
     
-    return this.http.put(apiUrl + `users/${user.Username}/${movieId}`, {}, {
+    return this.http.post(apiUrl + `users/${user.Username}/${movieId}`, {}, {
       headers: new HttpHeaders({
         "Content-Type": "application/json",
         Authorization: 'Bearer ' + token,
