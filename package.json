@@ -37,6 +37,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ngx-deploy-npm": "^7.0.1",
+    "typedoc": "^0.25.1",
     "typescript": "~5.1.3"
   }
 }
