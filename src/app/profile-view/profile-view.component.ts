@@ -2,7 +2,10 @@ import { Component, Input } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
-
+/**
+ * The user type, says that the code can expect a username, password, email, and favorite movie.
+ * One this has been recieved, it is passed into the User data which is shown on the screen. From there the user can submit the updated form to update their username.
+ */
 type User = { _id?: string, Username?: string, Password?: string, Email?: string, FavoriteMovies?: [] }
 
 @Component({

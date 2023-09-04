@@ -5,6 +5,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { MovieDetailDialogComponent } from '../movie-detail-dialog/movie-detail-dialog.component';
 
+/**
+ * This component controls the movie card component.
+ * It then will check that the user is logged in.
+ * If the user is logged in, it will display the movie title, the director, and buttons to see the genre, director, and a button to add/remove to favorites.
+ */
 
 @Component({
   selector: 'app-movie-card',

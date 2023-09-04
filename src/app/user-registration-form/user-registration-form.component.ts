@@ -9,6 +9,11 @@ import { FetchApiDataService } from '../fetch-api-data.service';
 // This import is used to display notifications back to the user
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+/**
+ * Tkis component will allow the user to registure for an account. 
+ * It will take a username, password, email, and birthday.
+ * If the username is taken or the email isn't valid then it will fail.
+ */
 
 @Component({
   selector: 'app-user-registration-form',
@@ -45,5 +50,4 @@ registerUser(): void {
       });
     });
   }
-
-  }
+}

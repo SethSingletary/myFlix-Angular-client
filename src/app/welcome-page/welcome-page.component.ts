@@ -4,6 +4,9 @@ import { UserRegistrationFormComponent } from '../user-registration-form/user-re
 import { MatDialog } from '@angular/material/dialog';
 import { ProfileViewComponent } from '../profile-view/profile-view.component';
 
+/**
+ * This component is what is displayed on the page loading. This will then allow the user to choose to either log in or register.
+ */
 @Component({
   selector: 'app-welcome-page',
   templateUrl: './welcome-page.component.html',

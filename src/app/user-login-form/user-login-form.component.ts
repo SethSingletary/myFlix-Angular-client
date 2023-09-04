@@ -4,6 +4,10 @@ import { FetchApiDataService } from "../fetch-api-data.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 
+/**
+ * This component shows the login form, which will let the user login in with a passwword and username.
+ * After it has been updated, it will navigate the user to the movies homepage.
+ */
 
 @Component({
   selector: 'app-user-login-form',
